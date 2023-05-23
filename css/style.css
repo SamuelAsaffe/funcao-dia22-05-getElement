@@ -9,6 +9,12 @@
 
 }
 
+.circulogrid {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+}
+
 .hipogrid {
     display: grid;
     grid-template-columns: 1fr 0.1fr 1fr 0.3fr 1fr;
