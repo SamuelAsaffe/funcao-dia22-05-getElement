@@ -1,5 +1,16 @@
 .tarefa {
     background-color: bisque;
     border-radius: 8px;
-    margin: 15px;
+    margin: 15px 15px;
+}
+
+.arredondar4 {
+    border-radius: 4px;
+
+}
+
+.hipogrid {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr 0.3fr 1fr;
+    grid-template-rows: 1fr;
 }
