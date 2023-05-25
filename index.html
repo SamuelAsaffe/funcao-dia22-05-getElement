@@ -13,29 +13,29 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg texte-center bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">nada para ver</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <header class="navefundo">
+        <nav class="navbar navefundo navbar-expand-lg texte-center bg-body-tertiary">
+            <div class="container-fluid navefundo">
+                <a class="navbar-brand navefundo" href="#"><img src="" alt=""></a>
+                <button class="navbar-toggler navefundo" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon navefundo"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#tarefa1">Tarefa 1 a 3</a>
+                <div class="collapse navefundo navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navefundo me-auto mb-2 mb-lg-0">
+                        <li class="nav-item navefundo">
+                            <a class="nav-link active navefundo" aria-current="page" href="#tarefa1">Tarefa 1 a 3</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#tarefa4">Tarefa 4 a 6</a>
+                        <li class="nav-item navefundo">
+                            <a class="nav-link active navefundo" aria-current="page" href="#tarefa4">Tarefa 4 a 6</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#tarefa7">Tarefa 7 a 9</a>
+                        <li class="nav-item navefundo">
+                            <a class="nav-link active navefundo" aria-current="page" href="#tarefa7">Tarefa 7 a 9</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link disabled">ganhe um pix</a>
+                        <li class="nav-item navefundo">
+                            <a class="nav-link disabled navefundo">ganhe um pix</a>
                         </li>
                     </ul>
 
@@ -68,16 +68,80 @@
                             type="text" readonly placeholder="Área do Círculo"></div>
                 </div>
                 <div class="coluna cortaFundo"></div>
-
             </div class="fimcirculogrid">
+            <br>
+        </div>
 
+        <div class="container cortaFundo tarefa" id="tarefa2">
+            <h3 class="cortaFundo">
+                2)crie uma função que calcule a área do retângulo a partir da base x altura
+            </h3><br>
+            <div class="retangulogrid cortaFundo">
+                <div class="coluna">
+                    <div class="linha input-group">
+                        <input class="form-control text-center" id="input-baseret" type="text"
+                            placeholder="valor da base">
+                    </div>
+                </div>
+                <div class="coluna cortaFundo">
+                    <div class="linha  text-center cortaFundo input-group">
+                        <algo class="input-text cortaFundo px-1" style="margin: 0px 7px;"> * </algo>
+                    </div>
+                </div>
+                <div class="coluna cortaFundo">
+                    <div class="linha input-group cortaFundo"><input class="form-control" id="input-alturaret" type="text"
+                            placeholder="valor da altura"></div>
+                </div>
+                <div class="coluna cortaFundo" style="margin: 0px 7px;">
+                    <div class="linha cortaFundo input-group">
+                        <algo class="btn btn-outline-primary cortaFundo px-4" onclick="retangulo(">=</algo>
+                    </div>
+                </div>
+                <div class="coluna cortaFundo">
+                    <div class="linha input-group cortaFundo"><input class="form-control border-light" id="output-arearet"
+                            type="text" readonly placeholder="área retângulo"> </div>
+                </div>
+            </div class="fimretangulogrid">
+            <br>
+        </div>
+
+        <div class="container cortaFundo tarefa" id="tarefa3">
+            <h3 class="cortaFundo">
+                3)crie uma função que calcule a área do triângulo a partir da base x altura
+            </h3><br>
+            <div class="triangulogrid cortaFundo">
+                <div class="coluna">
+                    <div class="linha input-group">
+                        <input class="form-control text-center" id="input-basetri" type="text"
+                            placeholder="valor da base">
+                    </div>
+                </div>
+                <div class="coluna cortaFundo">
+                    <div class="linha  text-center cortaFundo input-group">
+                        <algo class="input-text cortaFundo px-1" style="margin: 0px 7px;"> * </algo>
+                    </div>
+                </div>
+                <div class="coluna cortaFundo">
+                    <div class="linha input-group cortaFundo"><input class="form-control" id="input-alturatri" type="text"
+                            placeholder="valor da altura"></div>
+                </div>
+                <div class="coluna cortaFundo" style="margin: 0px 7px;">
+                    <div class="linha cortaFundo input-group">
+                        <algo class="btn btn-outline-primary cortaFundo px-4" onclick="triangulo(">=</algo>
+                    </div>
+                </div>
+                <div class="coluna cortaFundo">
+                    <div class="linha input-group cortaFundo"><input class="form-control border-light" id="output-areatri"
+                            type="text" readonly placeholder="área triângulo"> </div>
+                </div>
+            </div class="fimtriangulogrid">
             <br>
         </div>
 
 
-        <div class="container cortaFundo tarefa" id="tarefa2">
+        <div class="container cortaFundo tarefa" id="tarefa4">
             <h3 class="cortaFundo">
-                2)crie uma função que calcule a hipotenusa de um triangulo-retângulo a partir dos catetos
+                4)crie uma função que calcule a hipotenusa de um triangulo-retângulo a partir dos catetos
             </h3><br>
             <div class="hipogrid cortaFundo">
                 <div class="coluna">
@@ -104,19 +168,13 @@
                     <div class="linha input-group cortaFundo"><input class="form-control border-light" id="output-hipotenusa"
                             type="text" readonly placeholder="Hipotenusa ²"> </div>
                 </div>
-
             </div class="fimhipogrid">
             <br>
         </div>
 
-
-
- 
-
-
-        <div class="container cortaFundo tarefa" id="tarefa3">
+        <div class="container cortaFundo tarefa" id="tarefa5">
             <h3 class="cortaFundo">
-                3)Converta um valor em reais para dolares <br>
+                5)Converta um valor em reais para dolares <br>
             </h3>
             <div class="dolgrid cortaFundo">
                 <div class="coluna">
@@ -143,15 +201,13 @@
                     <div class="linha input-group cortaFundo "><input class="form-control border-light" id="output-hipotenusa"
                             type="text" readonly placeholder="Dolares"> </div>
                 </div>
-
             </div class="fimdolgrid">
-
             <br>
         </div>
 
-        <div class="container  cortaFundo tarefa" id="tarefa4">
+        <div class="container  cortaFundo tarefa" id="tarefa6">
             <h3 class="cortaFundo">
-                4) Converter celcius para fahrenheit <br>
+                6) Converter celcius para fahrenheit <br>
             </h3>
             <div class="celciusgrid  cortaFundo ">
                 <div class="coluna cortaFundo "></div>
@@ -161,7 +217,6 @@
                             placeholder="Célcius">
                     </div>
                 </div>
-
                 <div class="coluna cortaFundo " style="margin: 0px 7px;">
                     <div class="linha input-group cortaFundo  ">
                         <algo class="btn btn-outline-primary cortaFundo  px-4" onclick="circulo(">=</algo>
@@ -172,14 +227,13 @@
                             type="text" readonly placeholder="Fahrenheit"></div>
                 </div>
                 <div class="coluna cortaFundo "></div>
-
             </div class="fimcelciusgrid">
             <br>
         </div>
         
-        <div class="container  cortaFundo  tarefa" id="tarefa5">
+        <div class="container  cortaFundo  tarefa" id="tarefa7">
             <h3 class="cortaFundo">
-                5)calcular a média aritmética entre 3 notas <br>
+                7)calcular a média aritmética entre 3 notas <br>
             </h3>
             <div class="mediaAgrid cortaFundo ">
                 <div class="coluna cortaFundo ">
@@ -212,8 +266,8 @@
                     </div>
                 </div>
                 <div class="coluna cortaFundo ">
-                    <div class="linha input-group cortaFundo "><input class="form-control cortaFundo " id="input-catetoOposto" type="text"
-                            placeholder="Quantidade de notas"></div>
+                    <div class="linha input-group cortaFundo "><input class="form-control cortaFundo " id="output-catetoOposto" type="text"
+                        readonly placeholder="Quantidade de notas"></div>
                 </div>
             </div class="fimmediaAgrid">
 
@@ -233,10 +287,36 @@
             <br>
         </div>
 
-        <div class="container cortaFundo tarefa" id="tarefa6">
+        <div class="container cortaFundo tarefa" id="tarefa8">
             <h3 class="cortaFundo">
-                6)Obter 2 raizes de uma equação do 2º grau a partir dos valores "a","b" e "c". (vulgo
-                Bhaskara)<br>
+                8)crie uma função que converta Km/H para M/S <br>
+            </h3>
+            <div class="circulogrid cortaFundo">
+                <div class="coluna cortaFundo"></div>
+                <div class="coluna cortaFundo">
+                    <div class="linha input-group cortaFundo">
+                        <input class="form-control text-center" id="input-raio" type="text"
+                            placeholder="velocidade em KM/H">
+                    </div>
+                </div>
+
+                <div class="coluna" style="margin: 0px 7px;">
+                    <div class="linha input-group cortaFundo">
+                        <algo class="btn btn-outline-primary px-4" onclick="circulo(">=</algo>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha input-group"><input class="form-control border-light" id="output-areaCirculo"
+                            type="text" readonly placeholder="Velocidade em M/S"></div>
+                </div>
+                <div class="coluna cortaFundo"></div>
+            </div class="fimcirculogrid">
+            <br>
+        </div>
+
+        <div class="container cortaFundo tarefa" id="tarefa9">
+            <h3 class="cortaFundo">
+                9)Obter 2 raizes de uma equação do 2º grau a partir dos valores "a","b" e "c". (vulgo elta e Bhaskara)<br>
             </h3>
             <div class="abcgrid cortaFundo linha">
                 <div class="coluna cortaFundo ">
@@ -264,14 +344,12 @@
             <div class="delta">
                 <div class="nada cortaFundo ">
                 </div>
-                
                 <div class="coluna cortaFundo ">
                     <div class="linha cortaFundo  input-group"><input class="form-control cortaFundo " id="input-catetoOposto" type="text"
-                            placeholder="Valor de delta"></div>
+                        readonly placeholder="Valor de delta"></div>
                 </div>
                 <div class="coluna cortaFundo ">
-                    <div class="linha cortaFundo  "><vazio class=" cortaFundo " id="confirmaçãodelta" type="text"
-                            ">  </vazio></div>
+                    <div class="linha cortaFundo  "><vazio class=" cortaFundo " id="confirmaçãodelta" type="text">  </vazio></div>
                 </div>
                 <div class="nada cortaFundo ">
                 </div>
@@ -296,6 +374,16 @@
         </div>
     </main>
 
+    <footer>
+        <div >
+            <ul class="fot text-center">
+                <li>Todos os direitos reservados a Samuel Asaffe&copy; </li>
+                <li>24/maio/2023</li>
+                
+            </ul>
+        </div>
+
+    </footer>
 </body>
 
 </html>
