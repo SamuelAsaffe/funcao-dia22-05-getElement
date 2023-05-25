@@ -1,20 +1,23 @@
+* {
+    background-color: #f9f69e;
+}
 .tarefa {
     background-color: bisque;
     border-radius: 8px;
     margin: 15px 15px;
 }
-
-.arredondar4 {
-    border-radius: 4px;
+.cortaFundo {
+    background-color: bisque; 
 
 }
-
+.arredondar4 {
+    border-radius: 4px;
+}
 .circulogrid {
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.1fr 1fr 0.5fr;
     grid-template-rows: 1fr;
 }
-
 .hipogrid {
     display: grid;
     grid-template-columns: 1fr 0.1fr 1fr 0.3fr 1fr;
@@ -32,16 +35,27 @@
 }
 .mediaAgrid {
     display: grid;
-    grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr 0.2fr 1fr;
+    grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
     grid-template-rows: 1fr;
 }
 .mediaBgrid {
     display: grid;
-    grid-template-columns: 0.4fr 0.2fr 0.4fr 0.6fr 0.1fr 0.3fr;
+    grid-template-columns:  0.2fr 0.1fr 0.6fr 0.1fr ;
     grid-template-rows: 1fr;
 }
-.bordas {
-    border: 2px ;
-    border-color: solid black;
+.abcgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.3fr;
+    grid-template-rows: 1fr;
+}
+.delta {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 1fr;
+}
+.bhaskaragrid {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 1fr;
 }
 
