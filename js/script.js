@@ -17,10 +17,11 @@ function hipotenusa() {
     alert("O valor da hipotenusa é: " + hp)
 }
 function dolares() {
-    let reais = prompt("Quantos reais que você deseja trocar por dolares?")
-    let dol = reais / 5
+    let reais = prompt("Quantos reais que você deseja trocar por dolares? ")
+    let cambio = prompt("qual a contação do dolar hoje? ")
+    let dol = reais / cambio
     dol = parseFloat(dol.toFixed(2))
-    alert("Seus reais foram convertidos para " + dol + " dolares")
+    alert("Seus reais foram convertidos para " + dol + " dolares ")
 }
 
 //     tarefa 4

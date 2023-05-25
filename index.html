@@ -102,7 +102,7 @@
                 </div>
                 <div class="coluna">
                     <div class="linha input-group"><input class="form-control border-light" id="output-hipotenusa"
-                            type="text" readonly placeholder="Hipotenusa ²"></div>
+                            type="text" readonly placeholder="Hipotenusa ²"> </div>
                 </div>
 
             </div class="fimhipogrid">
@@ -118,6 +118,33 @@
             <h3>
                 3)Converta um valor em reais para dolares <br>
             </h3>
+            <div class="dolgrid">
+                <div class="coluna">
+                    <div class="linha input-group">
+                        <input class="form-control text-center" id="input-catetoAdijacente" type="text"
+                            placeholder="Valor em Reais">
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha  text-center input-group">
+                        <algo class="input-text  px-1" style="margin: 0px 7px;"> / </algo>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha input-group"><input class="form-control" id="input-catetoOposto" type="text"
+                            placeholder="Cotação de Hoje"></div>
+                </div>
+                <div class="coluna" style="margin: 0px 7px;">
+                    <div class="linha input-group">
+                        <algo class="btn btn-outline-primary px-4" onclick="dolares(">=</algo>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha input-group"><input class="form-control border-light" id="output-hipotenusa"
+                            type="text" readonly placeholder="Dolares"> </div>
+                </div>
+
+            </div class="fimdolgrid">
 
             <br>
         </div>
@@ -126,15 +153,90 @@
             <h3>
                 4) Converter celcius para fahrenheit <br>
             </h3>
+            <div class="celciusgrid">
+                <div class="coluna"></div>
+                <div class="coluna">
+                    <div class="linha input-group">
+                        <input class="form-control text-center" id="input-catetoAdijacente" type="text"
+                            placeholder="Célcius">
+                    </div>
+                </div>
 
+                <div class="coluna" style="margin: 0px 7px;">
+                    <div class="linha input-group ">
+                        <algo class="btn btn-outline-primary px-4" onclick="circulo(">=</algo>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha input-group"><input class="form-control border-light" id="output-hipotenusa"
+                            type="text" readonly placeholder="Fahrenheit"></div>
+                </div>
+                <div class="coluna"></div>
+
+            </div class="fimcelciusgrid">
             <br>
         </div>
-
+        
         <div class="container tarefa" id="tarefa5">
             <h3>
                 5)calcular a média aritmética entre 3 notas <br>
             </h3>
+            <div class="mediaAgrid">
+                <div class="coluna">
+                    <div class="linha input-group">
+                        <input class="form-control text-center" id="input-catetoAdijacente" type="text"
+                            placeholder="">
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha  text-center input-group">
+                        <algo class="input-text  px-1" style="margin: 0px 7px;"> + </algo>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha input-group"><input class="form-control" id="input-catetoOposto" type="text"
+                            placeholder="Cotação de Hoje"></div>
+                </div>
+                <div class="coluna">
+                    <div class="linha  text-center input-group">
+                        <algo class="input-text  px-1" style="margin: 0px 7px;"> + </algo>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha input-group"><input class="form-control" id="input-catetoOposto" type="text"
+                            placeholder="Cotação de Hoje"></div>
+                </div>
+                <div class="coluna">
+                    <div class="linha  text-center input-group">
+                        <algo class="input-text btn-outline-primary  px-1" style="margin: 0px 7px;"> / </algo>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha input-group"><input class="form-control" id="input-catetoOposto" type="text"
+                            placeholder="Quantidade de notas"></div>
+                </div>
 
+            </div class="fimmediaAgrid">
+            
+
+            <div class="mediaBgrid">
+                <div class="nada">
+
+                </div>
+                
+                <div class="nada">
+
+                </div>
+                <div class="coluna" style="margin: 0px 7px;">
+                    <div class="linha input-group">
+                        <algo class="btn  btn-outline-primary px-4" onclick="mediaAritimetica(">=</algo>
+                    </div>
+                </div>
+                <div class="coluna">
+                    <div class="linha input-group"><input class="form-control border-light" id="output-hipotenusa"
+                            type="text" readonly placeholder="Média da Nota"> </div>
+                </div>
+            </div class="fimmediaBgrid">
             <br>
         </div>
 
@@ -151,3 +253,6 @@
 </body>
 
 </html>
+
+
+
