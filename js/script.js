@@ -1,23 +1,11 @@
 //   tarefa 1
 
 function circulo() {
-    let raio = document.getElementById("input-raio")
-    let areacirc = document.getElementById("input-areaCirculo")
-    let resposta = (parseFloat(raio.value) * parseFloat(raio.value)) * 3.14
-    if (raio.value == "") {
-        areacirc = "preemcha os campos"
-        return
-    }
-    if (!(raio.value > 0)) {
-
-        areacirc.value = "insira apensa número reais positivos!"
-        return
-    }
-    alert(" A área do circulo é igual a: " + circ)
+    raio = document.getElementById("entrada").value
+    area = (parseFloat(raio.value) * parseFloat(raio.value)) * 3.14
+    document.getElementById("saida").innerText = area
 }
-areacirc.value = resposta
 
-//   tarefa 2 área do retangulo
 
 function retangulo() {
     let baseret = prompt("qual o valor da base ?")
