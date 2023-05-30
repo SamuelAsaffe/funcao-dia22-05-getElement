@@ -4,81 +4,137 @@ function circulo() {
     raio = document.getElementById("entradacirculo").value
     if (!isNaN(raio)) {
         areacirculo = (parseFloat(raio) * parseFloat(raio)) * 3.14
-        
+
         document.getElementById("saidacirculo").innerText = areacirculo
-    }else{
+    } else {
         areacirculo = ("escreva números")
         document.getElementById("saidacirculo").innerText = areacirculo
     }
 }
-    
+
 
 //   tarefa 2 área do retangulo
 
 function retangulo() {
     baseretangulo = document.getElementById("baseretangulo").value
     alturaretangulo = document.getElementById("alturaretangulo").value
-    retsaida=document.getElementById("arearetangulo")
-    
-    baseretangulo=(parseFloat(baseretangulo))
-    alturaretangulo=(parseFloat(alturaretangulo))
-    if (!isNaN(baseretangulo)) {
+    retsaida = document.getElementById("arearetangulo")
+
+    baseretangulo = (parseFloat(baseretangulo))
+    alturaretangulo = (parseFloat(alturaretangulo))
+    if (!isNaN(baseretangulo) && !isNaN(alturaretangulo)) {
         arearet = alturaretangulo * baseretangulo
-        arearet=(parseFloat(arearet))
+        arearet = (parseFloat(arearet))
         retsaida.innerText = arearet
-    }else{
+    } else {
         arearet = "esceva um numero"
         retsaida.innerText = arearet
     }
-    
+
 }
 
 //   tarefa 3 área do triangulo
 
+// function triangulo() {
+//     basetri = document.getElementById("basetri").value
+//     alturatri = document.getElementById("alturatri").value
+//     basetri = (parseFloat(basetri))
+//     alturatri = (parseFloat(alturatri))
+
+//     if (!isNaN(basetri) && !isNaN(alturatri)) {
+//         areatri = (alturatri * basetri) / 2
+//         areatri = (parseFloat(areatri))
+//         areatri = document.getElementById("areatri").innerText
+//     } else {
+//         areatri = "números pleas"
+//         areatri = document.getElementById("areatri").innerText
+//     }
+
+// }
 function triangulo() {
-    let basetri = prompt("qual o valor da base ?")
-    let alturatri = prompt("qual o valor da altura ?")
-    let areatri = alturatri * basetri
-    alert(" A área do triangulo é igual a: " + areatri)
+    basetri = document.getElementById("basetri").value
+    alturatri = document.getElementById("alturatri").value
+    trisaida = document.getElementById("areatri")
+
+    basetri = (parseFloat(basetri))
+    alturatri = (parseFloat(alturatri))
+    if (!isNaN(basetri) && !isNaN(alturatri)) {
+        areatri = (alturatri * basetri) / 2
+        areatri = (parseFloat(areatri))
+        document.getElementById("areatri").innerText = (areatri)
+    } else {
+        document.getElementById("areatri").innerText = ("escreva um número")
+    }
+
 }
 
 //   terefa 4 hipotenusa
 function hipotenusa() {
-    let ca = prompt("Qual o valor do cateto oposto?")
-    let co = prompt("Qual o valor do cateto adjacente?")
+    ca = parseFloat(document.getElementById("catetoAdijacente").value)
+    co = parseFloat(document.getElementById("catetoOposto").value)
+    if (!isNaN(ca) && !isNaN(co)) {
+        hp = parseFloat(Math.sqrt((co * co) + (ca * ca)).toFixed(2))
+        document.getElementById("hipotenusa").innerText = (hp)
 
-    let hp = Math.sqrt(co * co + ca * ca)
-    hp = parseFloat(hp.toFixed(2))
+    } else {
+        hp = "use numeros"
+        document.getElementById("hipotenusa").innerText = (hp)
 
-    alert("O valor da hipotenusa é: " + hp)
+    }
+
+
+
 }
 //     tarefa 5  reais para dolares
 function dolares() {
-    let reais = prompt("Quantos reais que você deseja trocar por dolares? ")
-    let cambio = prompt("qual a contação do dolar hoje? ")
-    let dol = reais / cambio
-    dol = parseFloat(dol.toFixed(2))
-    alert("Seus reais foram convertidos para " + dol + " dolares ")
+    let reais = document.getElementById("reais").value
+    let cambio = document.getElementById("cambio").value
+
+    if (!isNaN(reais) && !isNaN(cambio)) {
+        dolar = parseFloat(reais / cambio).toFixed(2)
+        document.getElementById("dolar").innerText = (dolar)
+
+    } else {
+        dolar = "use numeros"
+        document.getElementById("dolar").innerText = (dolar)
+    }
 }
 
 //     tarefa 6 celcius para fahreheit
 function celcius() {
-    let c = prompt("quantos graus celcius que é para converter para fahrenheit? ")
-    let f = 32 + (c * 1.8)
-    f = parseFloat(f.toFixed(2))
-    alert("a converção resultou em " + f + " grau fahrenheit")
+    let c = document.getElementById("celcius").value
+    if (!isNaN(c)) {
+        f = parseFloat(32 + (c * 1.8)).toFixed(2)
+        document.getElementById("fahrenheit").innerText = ("a converção resultou em " + f + " grau fahrenheit")
+
+    } else {
+        document.getElementById("fahrenheit").innerText = (" escreva números")
+
+    }
+
 }
 
+if (!isNaN() && !isNaN()) {
 
+
+} else {
+
+
+}
 //    tarefa 7   media aritimética de 3 notas
 
 function mediaAritimetica() {
-    let n1 = parseFloat(prompt(" qual o valor de 1ª nota? "))
-    let n2 = parseFloat(prompt(" qual o valor de 2ª nota? "))
-    let n3 = parseFloat(prompt(" qual o valor de 3ª nota? "))
-    let media = ((n1 + n2 + n3) / 5)
-    media = parseFloat(media.toFixed(2))
-    alert(" O valor da média aritimética é: " + media)
+    let n1 = parseFloat(document.getElementById("nota1").value)
+    let n2 = parseFloat(document.getElementById("nota2").value)
+    let n3 = parseFloat(document.getElementById("nota3").value)
+    nn = parseFloat(document.getElementById("nnotas").value)
+    if (!isNaN(n1) && !isNaN(n2) && !isNaN(n3) && !isNaN(nn)) {
+        media = parseFloat((n1 + n2 + n3) / nn).toFixed(2)
+        document.getElementById("mediaNotas").innerText = (" O valor da média aritimética da notas é: " + media)
+    } else {
+        document.getElementById("mediaNotas").innerText = ("põe números")
+    }
+
 }
 
 
