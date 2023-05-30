@@ -16,17 +16,19 @@ function circulo() {
 //   tarefa 2 área do retangulo
 
 function retangulo() {
-    baseretangulo = documento.getElementById("baseretangulo").value
+    baseretangulo = document.getElementById("baseretangulo").value
     alturaretangulo = document.getElementById("alturaretangulo").value
+    retsaida=document.getElementById("arearetangulo")
+    
     baseretangulo=(parseFloat(baseretangulo))
     alturaretangulo=(parseFloat(alturaretangulo))
-    arearet=(parseFloat(arearet))
-    if (!isNaN(baseret)) {
+    if (!isNaN(baseretangulo)) {
         arearet = alturaretangulo * baseretangulo
-        document.getElementById("arearetangulo").innerText = arearet
+        arearet=(parseFloat(arearet))
+        retsaida.innerText = arearet
     }else{
         arearet = "esceva um numero"
-        document.getElementById("arearetangulo").innerText = arearet
+        retsaida.innerText = arearet
     }
     
 }
