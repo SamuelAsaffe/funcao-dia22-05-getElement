@@ -139,11 +139,18 @@ function mediaAritimetica() {
 
 
 //      tarefa 8   km/h para m/s
+
 function velocidade() {
-    let km = prompt(" Qual a velocidade em KM/H ? ")
-    let ms = prompt(" Qual a velocidade em m/s ? ")
-    ms = km * 3.6
-    alert("a velocidade em metros por segundo é = " + ms)
+    let km = parseFloat(document.getElementById("km").value)
+    if (!isNaN(km)) {
+        ms = parseFloat(km * 3.6).toFixed(2)
+        document.getElementById("ms").innerText = ("o valor em metros por segundo é: " + ms)
+
+    } else {
+        document.getElementById("ms").innerText = ("escreva em números, sem letras ")
+
+    }
+
 }
 
 //      tarefa 9 bhaskara
@@ -151,9 +158,17 @@ function velocidade() {
 function bhaskara() {
 
     let a, b, c, x1, x2, delta, r
-    a = parseFloat(prompt("Digite o valor de a: "));
-    b = parseFloat(prompt("Digite o valor de b: "));
-    c = parseFloat(prompt("Digite o valor de c: "));
+    a = parseFloat(document.getElementById("km").value)
+    b = parseFloat(document.getElementById("km").value)
+    c = parseFloat(document.getElementById("km").value)
+
+    if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+        delta = parseFloat(b * b - 4 * a * c).toFixed(2)
+
+    } else {
+
+
+    }
     delta = b * b - 4 * a * c
     if (delta < 0) {
 
