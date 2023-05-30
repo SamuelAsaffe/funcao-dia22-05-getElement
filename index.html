@@ -54,11 +54,12 @@
                 <div class="coluna cortaFundo"></div>
                 <div class="coluna cortaFundo">
                     <div class="linha input-group cortaFundo">
-                        <input class="form-control text-center" id="entradacirculo" type="text" placeholder="Valor do Raio">
+                        <input class="form-control text-center" id="entradacirculo" type="text"
+                            placeholder="Valor do Raio">
                     </div>
                 </div>
 
-                <div class="coluna" style="margin: 0px 7px;">
+                <div class="coluna cortaFundo" style="margin: 0px 7px;">
                     <div class="linha input-group cortaFundo">
                         <button class="btn btn-outline-warning px-4" onclick="circulo()">enviar</button>
                     </div>
@@ -76,8 +77,8 @@
                 2)crie uma função que calcule a área do retângulo a partir da base x altura
             </h3><br>
             <div class="retangulogrid cortaFundo">
-                <div class="coluna">
-                    <div class="linha input-group">
+                <div class="coluna cortaFundo">
+                    <div class="linha input-group cortaFundo">
                         <input class="form-control text-center" id="baseretangulo" type="text"
                             placeholder="valor da base">
                     </div>
@@ -96,8 +97,9 @@
                         <algo class="btn btn-outline-warning cortaFundo px-4" onclick="retangulo()">=</algo>
                     </div>
                 </div>
-                
-                    <p class=" border-light cortaFundo" id="arearetangulo" type="text" readonly placeholder="área retângulo"> 
+
+                <p class=" border-light cortaFundo" id="arearetangulo" type="text" readonly
+                    placeholder="área retângulo">
             </div class="fimretangulogrid">
             <br>
         </div>
@@ -107,9 +109,9 @@
                 3)crie uma função que calcule a área do triângulo a partir da base x altura
             </h3><br>
             <div class="triangulogrid cortaFundo">
-                <div class="coluna">
-                    <div class="linha input-group">
-                        <input class="form-control text-center" id="input-basetri" type="text"
+                <div class="coluna cortaFundo">
+                    <div class="linha input-group cortaFundo">
+                        <input class="form-control  cortaFundo text-center" id="basetri" type="text"
                             placeholder="valor da base">
                     </div>
                 </div>
@@ -119,18 +121,17 @@
                     </div>
                 </div>
                 <div class="coluna cortaFundo">
-                    <div class="linha input-group cortaFundo"><input class="form-control" id="input-alturatri"
-                            type="text" placeholder="valor da altura"></div>
+                    <div class="linha input-group cortaFundo"><input class="form-control" id="alturatri" type="text"
+                            placeholder="valor da altura"></div>
                 </div>
                 <div class="coluna cortaFundo" style="margin: 0px 7px;">
                     <div class="linha cortaFundo input-group">
                         <algo class="btn btn-outline-warning cortaFundo px-4" onclick="triangulo()">=</algo>
                     </div>
                 </div>
-                <div class="coluna cortaFundo">
-                    <div class="linha input-group cortaFundo"><input class="form-control border-light"
-                            id="output-areatri" type="text" readonly placeholder="área triângulo"> </div>
-                </div>
+
+                <p class=" border-light cortaFundo" id="areatri" type="text" readonly placeholder="área triângulo">
+
             </div class="fimtriangulogrid">
             <br>
         </div>
@@ -141,9 +142,9 @@
                 4)crie uma função que calcule a hipotenusa de um triangulo-retângulo a partir dos catetos
             </h3><br>
             <div class="hipogrid cortaFundo">
-                <div class="coluna">
-                    <div class="linha input-group">
-                        <input class="form-control text-center" id="input-catetoAdijacente" type="text"
+                <div class="coluna cortaFundo">
+                    <div class="linha input-group cortaFundo">
+                        <input class="form-control text-center" id="catetoAdijacente" type="text"
                             placeholder="Cateto Adijacente ²">
                     </div>
                 </div>
@@ -153,18 +154,15 @@
                     </div>
                 </div>
                 <div class="coluna cortaFundo">
-                    <div class="linha input-group cortaFundo"><input class="form-control" id="input-catetoOposto"
-                            type="text" placeholder="Cateto Oposto ²"></div>
+                    <div class="linha input-group cortaFundo"><input class="form-control" id="catetoOposto" type="text"
+                            placeholder="Cateto Oposto ²"></div>
                 </div>
                 <div class="coluna cortaFundo" style="margin: 0px 7px;">
                     <div class="linha cortaFundo input-group">
                         <algo class="btn btn-outline-warning cortaFundo px-4" onclick="hipotenusa()">=</algo>
                     </div>
                 </div>
-                <div class="coluna cortaFundo">
-                    <div class="linha input-group cortaFundo"><input class="form-control border-light"
-                            id="output-hipotenusa" type="text" readonly placeholder="Hipotenusa ²"> </div>
-                </div>
+                <p class=" border-light cortaFundo" id="hipotenusa" type="text" readonly placeholder="Hipotenusa ²">
             </div class="fimhipogrid">
             <br>
         </div>
@@ -174,9 +172,9 @@
                 5)Converta um valor em reais para dolares <br>
             </h3>
             <div class="dolgrid cortaFundo">
-                <div class="coluna">
+                <div class="coluna cortaFundo">
                     <div class="linha cortaFundo input-group">
-                        <input class="form-control  cortaFundo text-center" id="input-reais" type="text"
+                        <input class="form-control  cortaFundo text-center" id="reais" type="text"
                             placeholder="Valor em Reais">
                     </div>
                 </div>
@@ -186,18 +184,15 @@
                     </div>
                 </div>
                 <div class="coluna cortaFundo ">
-                    <div class="linha cortaFundo input-group"><input class="form-control" id="input-catetoOposto"
-                            type="text" placeholder="Cotação de Hoje"></div>
+                    <div class="linha cortaFundo input-group"><input class="form-control" id="cambio" type="text"
+                            placeholder="Cotação de Hoje"></div>
                 </div>
                 <div class="coluna cortaFundo " style="margin: 0px 7px;">
                     <div class="linha cortaFundo  input-group">
                         <algo class="btn btn-outline-warning cortaFundo  px-4" onclick="dolares()">=</algo>
                     </div>
                 </div>
-                <div class="coluna cortaFundo ">
-                    <div class="linha input-group cortaFundo "><input class="form-control border-light"
-                            id="output-hipotenusa" type="text" readonly placeholder="Dolares"> </div>
-                </div>
+                <p class="border-light cortaFundo" id="dolar" type="text" readonly placeholder="Dolares">
             </div class="fimdolgrid">
             <br>
         </div>
@@ -210,19 +205,16 @@
                 <div class="coluna cortaFundo "></div>
                 <div class="coluna cortaFundo ">
                     <div class="linha  cortaFundo input-group">
-                        <input class="form-control text-center cortaFundo " id="input-catetoAdijacente" type="text"
+                        <input class="form-control text-center cortaFundo " id="celcius" type="number"
                             placeholder="Célcius">
                     </div>
                 </div>
                 <div class="coluna cortaFundo " style="margin: 0px 7px;">
                     <div class="linha input-group cortaFundo  ">
-                        <algo class="btn btn-outline-warning cortaFundo  px-4" onclick="circulo()">=</algo>
+                        <algo class="btn btn-outline-warning cortaFundo  px-4" onclick="celcius()">=</algo>
                     </div>
                 </div>
-                <div class="coluna cortaFundo ">
-                    <div class="linha input-group cortaFundo "><input class="form-control border-light"
-                            id="output-hipotenusa" type="text" readonly placeholder="Fahrenheit"></div>
-                </div>
+                <p class=" border-light cortaFundo" id="fahrenheit" type="text" readonly placeholder="Fahrenheit">
                 <div class="coluna cortaFundo "></div>
             </div class="fimcelciusgrid">
             <br>
@@ -235,8 +227,7 @@
             <div class="mediaAgrid cortaFundo ">
                 <div class="coluna cortaFundo ">
                     <div class="linha input-group cortaFundo ">
-                        <input class="form-control text-center cortaFundo " id="input-catetoAdijacente" type="text"
-                            placeholder="Nota 1">
+                        <input class="form-control text-center cortaFundo " id="nota1" type="text" placeholder="Nota 1">
                     </div>
                 </div>
                 <div class="coluna cortaFundo ">
@@ -245,8 +236,8 @@
                     </div>
                 </div>
                 <div class="coluna cortaFundo ">
-                    <div class="linha input-group cortaFundo "><input class="form-control cortaFundo "
-                            id="input-catetoOposto" type="text" placeholder="Nota 2"></div>
+                    <div class="linha input-group cortaFundo "><input class="form-control cortaFundo " id="nota2"
+                            type="text" placeholder="Nota 2"></div>
                 </div>
                 <div class="coluna cortaFundo ">
                     <div class="linha   cortaFundo text-center input-group">
@@ -254,8 +245,8 @@
                     </div>
                 </div>
                 <div class="coluna cortaFundo ">
-                    <div class="linha input-group cortaFundo "><input class="form-control cortaFundo "
-                            id="input-catetoOposto" type="text" placeholder="Nota 3"></div>
+                    <div class="linha input-group cortaFundo "><input class="form-control cortaFundo " id="nota3"
+                            type="text" placeholder="Nota 3"></div>
                 </div>
                 <div class="coluna cortaFundo ">
                     <div class="linha  cortaFundo  text-center input-group">
@@ -264,8 +255,8 @@
                     </div>
                 </div>
                 <div class="coluna cortaFundo ">
-                    <div class="linha input-group cortaFundo "><input class="form-control cortaFundo "
-                            id="output-catetoOposto" type="text" readonly placeholder="Quantidade de notas"></div>
+                    <div class="linha input-group cortaFundo "><input class="form-control cortaFundo " id="nnotas"
+                            value="3" type="text" readonly placeholder="3 notas"></div>
                 </div>
             </div class="fimmediaAgrid">
 
@@ -277,10 +268,7 @@
                         <algo class="btn  btn-outline-warning cortaFundo  px-4" onclick="mediaAritimetica()">=</algo>
                     </div>
                 </div>
-                <div class="coluna cortaFundo ">
-                    <div class="linha input-group cortaFundo "><input class="form-control  cortaFundo border-light"
-                            id="output-hipotenusa" type="text" readonly placeholder="Média das Notas"> </div>
-                </div>
+                <p class=" cortaFundo border-light" id="mediaNotas" type="text" readonly placeholder="Média das Notas">
             </div class="fimmediaBgrid">
             <br>
         </div>
@@ -293,14 +281,13 @@
                 <div class="coluna cortaFundo"></div>
                 <div class="coluna cortaFundo">
                     <div class="linha input-group cortaFundo">
-                        <input class="form-control text-center" id="input-raio" type="text"
-                            placeholder="velocidade em KM/H">
+                        <input class="form-control text-center" id="km" type="text" placeholder="velocidade em KM/H">
                     </div>
                 </div>
 
                 <div class="coluna" style="margin: 0px 7px;">
                     <div class="linha input-group cortaFundo">
-                        <algo class="btn btn-outline-warning px-4" onclick="circulo()">=</algo>
+                        <algo class="btn btn-outline-warning px-4" onclick="velocidade()">=</algo>
                     </div>
                 </div>
                 <div class="coluna">
