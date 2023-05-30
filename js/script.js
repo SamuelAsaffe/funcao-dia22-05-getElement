@@ -1,18 +1,36 @@
 //   tarefa 1
 
 function circulo() {
-    raio = document.getElementById("entrada").value
-    area = (parseFloat(raio.value) * parseFloat(raio.value)) * 3.14
-    document.getElementById("saida").innerText = area
+    raio = document.getElementById("entradacirculo").value
+    if (!isNaN(raio)) {
+        areacirculo = (parseFloat(raio) * parseFloat(raio)) * 3.14
+        
+        document.getElementById("saidacirculo").innerText = areacirculo
+    }else{
+        areacirculo = ("escreva números")
+        document.getElementById("saidacirculo").innerText = areacirculo
+    }
 }
+    
 
+//   tarefa 2 área do retangulo
 
 function retangulo() {
-    let baseret = prompt("qual o valor da base ?")
-    let alturaret = prompt("qual o valor da altura ?")
-    let arearet = alturaret * baseret
-    alert(" A área do retangulo é igual a: " + arearet)
+    baseretangulo = documento.getElementById("baseretangulo").value
+    alturaretangulo = document.getElementById("alturaretangulo").value
+    baseretangulo=(parseFloat(baseretangulo))
+    alturaretangulo=(parseFloat(alturaretangulo))
+    arearet=(parseFloat(arearet))
+    if (!isNaN(baseret)) {
+        arearet = alturaretangulo * baseretangulo
+        document.getElementById("arearetangulo").innerText = arearet
+    }else{
+        arearet = "esceva um numero"
+        document.getElementById("arearetangulo").innerText = arearet
+    }
+    
 }
+
 //   tarefa 3 área do triangulo
 
 function triangulo() {
