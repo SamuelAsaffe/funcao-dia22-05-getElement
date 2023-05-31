@@ -10,6 +10,9 @@
     border-radius: 8px;
     margin: 15px 15px;
 }
+main {
+    paddin: 5px 0 0 0;
+}
 .cortaFundo {
     background-color: bisque; 
 }
@@ -61,12 +64,12 @@
 }
 .delta {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-columns: 0.2fr 0.5fr 1fr 0.2fr;
     grid-template-rows: 1fr;
 }
 .bhaskaragrid {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-columns: 0.2fr 0.22fr 1fr 0.2fr 1fr ;
     grid-template-rows: 1fr;
 }
 .fot {

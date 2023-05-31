@@ -158,33 +158,29 @@ function velocidade() {
 function bhaskara() {
 
     let a, b, c, x1, x2, delta, r
-    a = parseFloat(document.getElementById("km").value)
-    b = parseFloat(document.getElementById("km").value)
-    c = parseFloat(document.getElementById("km").value)
+    a = parseFloat(document.getElementById("a").value)
+    b = parseFloat(document.getElementById("b").value)
+    c = parseFloat(document.getElementById("c").value)
 
     if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
         delta = parseFloat(b * b - 4 * a * c).toFixed(2)
+        if (delta < 0) {
+
+            document.getElementById("confirmDelta").innerText= ("a equação não possui raizes reais.")
+        }
+        else if (delta === 0) {
+            r = parseFloat( -b / (2 * a))
+            document.getElementById("confirmDelta").innerText= ("A equação possui uma raiz real: " + r.toFixed(2))
+    
+        }
+        else {
+            x1 = parseFloat(-b + Math.sqrt(delta) / (2 * a))
+            x2 = parseFloat(-b - Math.sqrt(delta) / (2 * a))
+            document.getElementById("x1").innerText = ("A equação possui duas raizes reais: " + x1.toFixed(2) ) 
+            document.getElementById("x2").innerText = 
+        }
 
     } else {
-
-
-    }
-    delta = b * b - 4 * a * c
-    if (delta < 0) {
-
-        let nprr = alert("a equação não possui raizes reais.")
-    }
-    else if (delta === 0) {
-        r = -b / (2 * a)
-        let prr = alert("A equação possui uma raiz real: " + r.toFixed(2))
-
-    }
-    else {
-        x1 = (-b + Math.sqrt(delta)) / (2 * a)
-        x2 = (-b - Math.sqrt(delta)) / (2 * a)
-        alert("A equação possui duas raizes reais: " + x1.toFixed(2) + " e " + x2.toFixed(2))
+        document.getElementById("saida bascara").innerText = ("escreva em números, sem letras ")
     }
 }
-  //ja posso xingar ? kkkkk
-
-
