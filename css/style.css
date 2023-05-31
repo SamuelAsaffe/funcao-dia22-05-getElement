@@ -1,4 +1,4 @@
-* {
+main,footer {
     color: rgb(60, 63, 37);
     background-color: #f9f69e;
 }
@@ -11,7 +11,7 @@
     margin: 15px 15px;
 }
 main {
-    paddin: 5px 0 0 0;
+    padding: 5px 0 5px 0;
 }
 .cortaFundo {
     background-color: bisque; 

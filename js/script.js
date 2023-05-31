@@ -176,8 +176,8 @@ function bhaskara() {
         else {
             x1 = parseFloat(-b + Math.sqrt(delta) / (2 * a))
             x2 = parseFloat(-b - Math.sqrt(delta) / (2 * a))
-            document.getElementById("x1").innerText = ("A equação possui duas raizes reais: " + x1.toFixed(2) ) 
-            document.getElementById("x2").innerText = 
+            document.getElementById("x1").innerText = ("a segunda raiz é: " + x1.toFixed(2) ) 
+            document.getElementById("x2").innerText = ("a primeira raiz é: " + x2.toFixed(2) ) 
         }
 
     } else {
