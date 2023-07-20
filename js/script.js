@@ -183,4 +183,4 @@ function bhaskara() {
     } else {
         document.getElementById("saida bascara").innerText = ("escreva em números, sem letras ")
     }
-}
+}asdfasdfsadfsad
